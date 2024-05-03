@@ -1,0 +1,47 @@
+body{
+    background-color: rgb(59, 63, 68);
+}
+header {
+    background-color: #333; /* Background color of the header */
+    color: #fff; /* Text color */
+    padding: 20px 0; /* Padding for the header content */
+  }
+  
+  .container {
+    display: flex;
+    justify-content: space-between; /* Align items horizontally with space between */
+    align-items: center; /* Align items vertically */
+    max-width: 1200px; /* Limit container width */
+    margin: 0 auto; /* Center the container */
+    padding: 0 20px; /* Add padding to the sides */
+  }
+  
+  .logo-brand {
+    font-size: 24px; /* Adjust font size */
+  }
+  
+  nav ul {
+    list-style: none; /* Remove default list styles */
+    margin: 0;
+    padding: 0;
+    display: flex;
+  }
+  
+  nav ul li {
+    margin-right: 20px; /* Spacing between navigation items */
+  }
+  
+  nav ul li:last-child {
+    margin-right: 0; /* No margin for the last navigation item */
+  }
+  
+  nav ul li a {
+    color: #fff; /* Link color */
+    text-decoration: none; /* Remove underline */
+    transition: color 0.3s ease; /* Smooth transition on hover */
+  }
+  
+  nav ul li a:hover {
+    color: #ccc; /* Change text color on hover */
+  }
+  

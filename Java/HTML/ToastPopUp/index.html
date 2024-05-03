@@ -1,0 +1,51 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <link rel="stylesheet" href="main.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.4/css/all.min.css">
+</head>
+<body>
+    <div id="main-container">
+                <h1>Toast PopUp</h1>
+            <select name="" id="horizontal-position">
+                <option value="left">Left</option>
+                <option value="right">Right</option>
+            </select>
+            </br>
+            <br>
+            <select name="" id="vertical-position">
+                <option value="buttom">Bottom</option>
+                <option value="top">Top</option>
+            </select>
+        <br><br>
+        <select name="" id="toast-type">
+            <option value="success">Success</option>
+            <option value="warning">Warning</option>
+            <option value="error">Error</option>
+            <option value="info">Info</option>
+        </select>
+        <br>
+        <br>
+        <input id="input" type="text" placeholder="Enter a text" class="toastmessage">
+        <br><br>
+        <div class="slidecontainer">
+            <span>Default range slider:</span>
+            <input type="range" min="1" max="100" value="50" id="duration">
+        </div>
+        <br><br>
+        <button id="button" type="button" class="showtoast" onclick="getVal()">Show Toast</button>
+    </div>
+    <div class="toasts-container ">
+        
+        <!-- <div class="toast"><i class="fas fa-solid fa-check"></i>This is a Successful toast message!<i class="fas fa-times-circle"></i></div>
+        <div class="toast"><i class="fas fa-home"></i>This is a toast message!<i class="fas fa-times-circle"></i></div>
+        <div class="toast"><i class="fas fa-exclamation-triangle"></i>This is a warning message!<i class="fas fa-times-circle"></i></div>
+        <div class="toast"><i class="fas fa-times-circle"></i>This is a cross message!<i class="fas fa-times-circle"></i></div>
+        <div class="toast"><i class="fas fa-home"></i>This is a toast message!<i class="fas fa-times-circle"></i></div> -->
+    </div>
+    <script src="toast.js"></script>
+</body>
+</html>

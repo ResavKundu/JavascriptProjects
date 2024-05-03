@@ -1,0 +1,84 @@
+body{
+    background-color: rgb(48, 45, 45);
+    text-align: center;
+}
+button:hover{
+    background-color: rgb(9, 255, 0);
+}
+button{
+    cursor: pointer;
+    min-width: 150px;
+    min-height: 30px;
+    border-radius: 50px;
+}
+.toast{
+    background-color: rgb(130, 207, 156);
+    padding: 0.5rem;
+    border-radius: 0.25rem;
+    box-shadow: 0 4px 10px 0 rgb(27, 27, 27);
+    color: rgb(17, 17, 16);
+    
+}
+.toast.success{
+    background-color: greenyellow;
+}
+.toast.warning{
+    background-color: rgb(247, 110, 19);
+}
+.toast.error{
+    background-color: rgb(247, 75, 75);
+}
+.toast.info{
+    background-color: rgb(141, 141, 233);
+}
+.toast.success::before{
+    content: "\f058"; /* Unicode for Font Awesome check-circle icon */
+    font-family: "Font Awesome 5 Free";
+    font-weight: 900; /* Adjust font weight as needed */
+    margin-right: 5px; /* Adjust spacing */
+    color: green; /* Adjust color */
+    
+}
+.toast.warning::before{
+    content: "\f071"; /* Unicode for Font Awesome exclamation-triangle icon */
+    font-family: "Font Awesome 5 Free";
+    font-weight: 900; /* Adjust font weight as needed */
+    margin-right: 5px; /* Adjust spacing */
+    color: rgb(255, 166, 0); /* Adjust color */
+}
+.toast.error::before {
+    content: "\f057"; /* Unicode for Font Awesome times-circle icon */
+    font-family: "Font Awesome 5 Free";
+    font-weight: 900; /* Adjust font weight as needed */
+    margin-right: 5px; /* Adjust spacing */
+    color: red; /* Adjust color */
+}
+.toast.info::before {
+    content: "\f05a"; /* Unicode for Font Awesome info-circle icon */
+    font-family: "Font Awesome 5 Free";
+    font-weight: 900; /* Adjust font weight as needed */
+    margin-right: 5px; /* Adjust spacing */
+    color: blue; /* Adjust color */
+}
+.toast span{
+    cursor: pointer;
+}
+/* .toast +.toast{
+    margin-top: 0.25rem;
+} */
+.toasts-container{
+    position: absolute;
+    top: 1rem;
+    left: 1rem;
+    display: flex;
+    flex-direction: column;
+    gap: 8px;
+}
+.toasts-container.right{
+    left:auto;
+    right: 1rem;
+}
+.toasts-container.buttom{
+    top:auto;
+    bottom: 1rem;
+}
